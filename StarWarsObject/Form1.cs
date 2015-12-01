@@ -25,6 +25,11 @@ namespace StarWarsObject
         }
         public void Xwing(float x, float y, float pixelsx, float pixelsy)
         {
+
+            ///
+            /// ******************* attention ***********************
+            /// ******** for best image use square scaling **********
+            ///
             float multx = pixelsx / 100;
             float multy = pixelsy / 100;
             Pen xwingPen = new Pen(Color.White, 1);
@@ -77,25 +82,25 @@ namespace StarWarsObject
             g.DrawLine(colorPen, x + 60 * multx, y + 25 * multy, x + 55 * multx, y + 30 * multy);
 
             //blaster module
-            g.FillRectangle(colorBrush2, 34 * multx + x, 66 * multy + y, 32 * multx + x, 34 * multy + y);
-            g.FillRectangle(colorBrush3, 35 * multx + x, 66 * multy + y, 30 * multx + x, 34 * multy + y);
-            g.FillRectangle(colorBrush4, 36 * multx + x, 66 * multy + y, 28 * multx + x, 34 * multy + y);
-            g.FillRectangle(colorBrush, 40 * multx + x, 66 * multy + y, 20 * multx + x, 34 * multy + y);
+            g.FillRectangle(colorBrush2, 34 * multx + x, 66 * multy + y, 32 * multx, 34 * multy);
+            g.FillRectangle(colorBrush3, 35 * multx + x, 66 * multy + y, 30 * multx, 34 * multy);
+            g.FillRectangle(colorBrush4, 36 * multx + x, 66 * multy + y, 28 * multx, 34 * multy);
+            g.FillRectangle(colorBrush, 40 * multx + x, 66 * multy + y, 20 * multx, 34 * multy);
             g.DrawLine(xwingPen, 33 * multx + x, 62 * multy + y, 33 * multx + x, 66 * multy + y);
             g.DrawLine(xwingPen, 67 * multx + x, 62 * multy + y, 67 * multx + x, 66 * multy + y);
             g.DrawLine(xwingPen, 33 * multx + x, 66 * multy + y, 67 * multx + x, 66 * multy + y);
 
             //fading blaster
-            g.FillRectangle(fadeBrush2, 0 * multx + x, 80 * multy + y, 100 * multx + x, 20 * multy + y);
-            g.FillRectangle(fadeBrush2, 0 * multx + x, 75 * multy + y, 40 * multx + x, 25 * multy + y);
-            g.FillRectangle(fadeBrush2, 60 * multx + x, 75 * multy + y, 40 * multx + x, 25 * multy + y);
-            g.FillRectangle(fadeBrush, 0 * multx + x, 90 * multy + y, 100 * multx + x, 20 * multy + y);
-            g.FillRectangle(fadeBrush3, 0 * multx + x, 90 * multy + y, 40 * multx + x, 10 * multy + y);
-            g.FillRectangle(fadeBrush3, 60 * multx + x, 90 * multy + y, 40 * multx + x, 10 * multy + y);
-            g.FillRectangle(fadeBrush, 0 * multx + x, 85 * multy + y, 40 * multx + x, 15 * multy + y);
-            g.FillRectangle(fadeBrush, 60 * multx + x, 85 * multy + y, 40 * multx + x, 15 * multy + y);
-            g.FillRectangle(fadeBrush2, 0 * multx + x, 95 * multy + y, 45 * multx + x, 5 * multy + y);
-            g.FillRectangle(fadeBrush2, 55 * multx + x, 95 * multy + y, 45 * multx + x, 5 * multy + y);
+            g.FillRectangle(fadeBrush2, 0 * multx + x, 80 * multy + y, 100 * multx, 20 * multy);
+            g.FillRectangle(fadeBrush2, 0 * multx + x, 75 * multy + y, 40 * multx, 25 * multy);
+            g.FillRectangle(fadeBrush2, 60 * multx + x, 75 * multy + y, 40 * multx, 25 * multy);
+            g.FillRectangle(fadeBrush, 0 * multx + x, 90 * multy + y, 100 * multx, 20 * multy);
+            g.FillRectangle(fadeBrush3, 0 * multx + x, 90 * multy + y, 40 * multx, 10 * multy);
+            g.FillRectangle(fadeBrush3, 60 * multx + x, 90 * multy + y, 40 * multx, 10 * multy);
+            g.FillRectangle(fadeBrush, 0 * multx + x, 85 * multy + y, 40 * multx, 15 * multy);
+            g.FillRectangle(fadeBrush, 60 * multx + x, 85 * multy + y, 40 * multx, 15 * multy);
+            g.FillRectangle(fadeBrush2, 0 * multx + x, 95 * multy + y, 45 * multx, 5 * multy);
+            g.FillRectangle(fadeBrush2, 55 * multx + x, 95 * multy + y, 45 * multx, 5 * multy);
         }
     }
 
